@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script>
+            function a(){
+                let x = document.getElementById("stn").value;
+                let a = parseInt(document.getElementById("s1").value);
+                let b = parseInt(document.getElementById("s2").value);
+                let c = parseInt(document.getElementById("s3").value);
+                let d = parseInt(document.getElementById("s4").value);
+                let e = parseInt(document.getElementById("s5").value);
+                let av=(a+b+c+d+e)/5;
+                document.getElementById("avg").innerHTML="student name "+x+" Average"+av;
+            }
+        </script>
+    </head>
+    <body>
+         Student Name :<input type="text" id="stn"><br>
+         Subject 1 Marks : <input type="number" id="s1"><br>
+         Subject 2 Marks : <input type="number" id="s2"><br>
+         Subject 3 Marks : <input type="number" id="s3"><br>
+         Subject 4 Marks : <input type="number" id="s4"><br>
+         Subject 5 Marks : <input type="number" id="s5"><br>
+         <button onclick="a()">average is</button>
+         <p id="avg"></p>
+    </body>
+</html>

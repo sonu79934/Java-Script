@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            function a(){
+                var v1=document.getElementById("a").value;
+                var v2=document.getElementById("b").value;
+                var v3=document.getElementById("c").value;
+                var v4=document.getElementById("d").value;
+                var v5=v1.slice(0,4)+v2.charAt(v2.length-1)+v3.charAt(v3.length-1);
+                v5+=v4.slice(8,12);
+                document.getElementById("p").innerHTML=v5;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Enter Value to reverse</h1>
+        Enter Candidate Name:<input type="text" id="a"><br>
+        Enter Father Name:<input type="text" id="b"><br>
+        Enter Mother Name:<input type="text" id="c"><br>
+        Enter Aadhar<input type="text" id="d"><br>
+        <h1 id="p"></h1>
+        <button onclick="a()">Click me to see the String</button>
+    </body>
+</html>

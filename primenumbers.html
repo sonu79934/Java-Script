@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script>
+            function a(){
+                var x= parseInt(document.getElementById("r").value);
+                document.write("Divisors are:-")
+                var c=0;
+                for(var i=1;i<=x;i++)
+            {
+                if ((x%i)==0){
+                    c++;
+                }
+            }
+            if (c==2){
+                document.write("prime number");
+            }else{
+                document.write("not a prime number");
+            }
+        }
+        </script>
+    </head>
+    <body>
+        Enter number to show the output<input type="text" id="r">
+        <button onclick="a()">Run</button>
+        <p id="r"></p>
+    </body>
+</html>
